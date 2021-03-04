@@ -88,18 +88,25 @@
             divide = document.getElementById("rg1_divide").checked
 
             if (plus) {
-                document.getElementById("arithmetic").innerHTML = (Number)(first) + (Number)(second)
+                document.getElementById("arithmetic").innerHTML = "Sum of " + first + " and " + second + " is " + (
+                    Number)(first) + (Number)(second);
             }
             if (minus) {
-                document.getElementById("arithmetic").innerHTML = first - second
+                result = first - second
+                text = "Difference of " + first + " and " + second + " is " + result
+                document.getElementById("arithmetic").innerHTML = "Difference of " + first + " and " + second + " is " +
+                    text;
             }
             if (times) {
-                document.getElementById("arithmetic").innerHTML = first * second
+                document.getElementById("arithmetic").innerHTML = "Product of " + first + " and " + second + " is " +
+                    first * second;
             }
             if (divide) {
-                document.getElementById("arithmetic").innerHTML = first / second
+                document.getElementById("arithmetic").innerHTML = "Division of " + first + " and " + second + " is " +
+                    first / second;
             }
         }
     </script>
 </body>
+
 </html>
